@@ -1,4 +1,4 @@
-import { login, signup } from "./actions";
+import { login /*, signup*/ } from "./actions";
 import { redirect } from "next/navigation";
 import { createClient } from "@/utils/supabase/server";
 
@@ -16,7 +16,7 @@ export default async function LoginPage() {
       <label htmlFor="password">Password:</label>
       <input id="password" name="password" type="password" required />
       <button formAction={login}>Log in</button>
-      <button formAction={signup}>Sign up</button>
+      {/* <button formAction={signup}>Sign up</button> */}
     </form>
   );
 }
